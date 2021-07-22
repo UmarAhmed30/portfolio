@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+
+.page {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #0a1931;
+}
+
+.container {
+  width: 90%;
+}
+
+.mainTitle {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.header {
+  margin: 0 0 2.5rem 0;
+  animation: slideIn 1s ease;
+}
+
+.title {
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  color: #08c18a;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2.5rem 0 0 0;
+  animation: fadeIn 3s;
+}
+
+@keyframes slideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(150px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 2rem 0;
+  }
+
+  .header {
+    margin: 0 0 1.5rem 0;
+  }
+
+  .mainTitle {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .skillsContainer{
+    margin: 1.5rem 0 2.5rem 0;
+  }
+}

@@ -1,0 +1,54 @@
+.skillCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.3);
+  margin: 0.5rem 0.5rem;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.25rem;
+  margin: 0 0 0 0.5rem;
+}
+
+.skillIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.skillLabel {
+  font-size: 0.9rem;
+  margin: 0 1.5rem;
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+  .skillCard {
+    margin: 0.5rem 0.1rem;
+  }
+
+  .skillLabel {
+    font-size: 0.75rem;
+    margin: 0 1.25rem;
+  }
+
+  .skillIcon {
+    width: 15px;
+    height: 15px;
+  }
+}

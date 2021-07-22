@@ -1,0 +1,45 @@
+.sortMenu {
+  display: flex;
+  overflow-x: auto;
+  animation: fadeIn 3s;
+}
+
+.sortMenu::-webkit-scrollbar {
+    width: 0;
+}
+
+.sortBtn {
+  margin: 0.5rem 0.25rem;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  background-color: #0a1931;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sortBtn:focus {
+  background-color: #112a52;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+}
