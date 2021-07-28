@@ -5,13 +5,15 @@
   min-width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
   background-color: #0a1931;
+  overflow: hidden;
 }
 
 .container {
   width: 90%;
+  margin: 3rem 0 0 0;
 }
 
 .mainTitle {
@@ -20,41 +22,40 @@
 }
 
 .header {
-  margin: 0 0 2.5rem 0;
-  animation: slideIn 1s ease;
+  margin: 0 0 1.5rem 0;
 }
 
 .title {
   font-family: "Roboto Mono", monospace;
-  text-transform: uppercase;
   color: #08c18a;
 }
 
 .skillsContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 2.5rem 0 0 0;
-  animation: fadeIn 3s;
+  margin: 1rem 0 0 0;
 }
 
-@keyframes slideIn {
-  0% {
-      opacity: 0;
-      transform: translateY(150px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
+.imgDiv {
+  flex-basis: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.resumeContainer {
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.resumePreview {
+  width: 140px;
+  height: 200px;
+  border-radius: 1rem;
 }
 
 /* Both Tablet and Mobile */
@@ -62,7 +63,19 @@
 }
 
 /* Tablet only */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1095px) {
+  .resumeContainer {
+    flex-direction: column;
+  }
+
+  .imgDiv {
+    margin: 2rem 0 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 /* Mobile only */
@@ -84,7 +97,26 @@
     font-size: 1rem;
   }
 
-  .skillsContainer{
+  .skillsContainer {
     margin: 1.5rem 0 2.5rem 0;
+  }
+
+  .resumeContainer {
+    flex-direction: column;
+  }
+
+  .imgDiv {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 5rem 0;
+  }
+
+  .resumePreview {
+    margin: 2rem 0;
+  }
+
+  .resume {
+    margin: 2rem 0 3rem 0;
   }
 }

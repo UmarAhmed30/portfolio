@@ -6,16 +6,6 @@
   padding: 1rem;
   border-radius: 2rem;
   box-shadow: 0 12px 22px rgba(0, 0, 0, 0.53);
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .title {
@@ -25,8 +15,8 @@
 }
 
 .avatar {
-  width: 75px;
-  height: 75px;
+  width: 55px;
+  height: 80px;
 }
 
 .genInfo {
@@ -65,8 +55,19 @@ lord-icon {
   margin: 1rem;
 }
 
+.contactLinks a, .contactLinks a:link {
+  color: #fff;
+}
+
 .socialIcon {
   margin: 0 2rem 0 0;
+}
+
+.profileFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Both Tablet and Mobile */
@@ -94,6 +95,10 @@ lord-icon {
   }
 
   .socialIcon {
-    margin: 0;
+    margin: 0 0.5rem;
+  }
+
+  .profileFooter {
+    justify-content: space-evenly;
   }
 }

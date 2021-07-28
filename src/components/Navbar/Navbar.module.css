@@ -11,16 +11,6 @@
   right: 0;
   margin: 1rem 1.5rem 1rem 1rem;
   box-shadow: 0 14px 44px rgba(0, 0, 0, 0.3);
-  animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .navBtn {
@@ -46,8 +36,8 @@
 
 .avatar {
   margin-right: 1rem;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 50px
 }
 
 .isActive button {
@@ -65,8 +55,8 @@
 @media only screen and (max-width: 767px) {
   .avatar {
     margin-right: 0.5rem;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 45px;
   }
 
   .navbar {

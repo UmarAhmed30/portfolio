@@ -1,0 +1,153 @@
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.contentContainer {
+  order: 1;
+  flex-basis: 50%;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.toolsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0;
+}
+
+.label {
+  flex-basis: 15%;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-basis: 50%;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0 0 1rem 0;
+}
+
+.source {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.socialIcon, .socialIcon:link {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.previewContainer {
+  order: 2;
+  flex-basis: 30%;
+}
+
+.preview {
+  width: 500px;
+  height: 268px;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.53);
+}
+
+@media only screen and (max-width: 1364px) {
+  .preview {
+    width: 400px;
+    height: 215px;
+  }
+
+  .contentContainer {
+    flex-basis: 60%;
+  }
+}
+
+/* Both Tablet and Mobile */
+@media only screen and (max-width: 1175px) {
+  .projectContainer {
+    flex-direction: column;
+    padding: 2rem;
+    margin: 0 0 2rem 0;
+  }
+
+  .previewContainer {
+    order: 1;
+  }
+
+  .contentContainer {
+    order: 2;
+  }
+
+  .preview {
+    width: 500px;
+    height: 268px;
+  }
+}
+
+/* Tablet only */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+  .toolsContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .preview {
+      width: 400px;
+      height: 215px;
+    }
+  }
+
+  @media only screen and (max-width: 525px) {
+    .preview {
+      width: 350px;
+      height: 188px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+    .container {
+      margin: 2rem 0;
+    }
+
+    .preview {
+      width: 250px;
+      height: 134px;
+    }
+
+    .projectContainer {
+      margin: 0rem 0 2rem 0;
+      border-radius: 1rem;
+    }
+
+    .contentContainer {
+      width: 280px;
+      margin: 1rem 0 0 0;
+    }
+
+    .projectContainer {
+      padding: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+  }
+}

@@ -1,19 +1,57 @@
 import ProfileCard from "../../components/ProfileCard/ProfileCard";
 import styles from "./Home.module.css";
 import TypewriterComponent from "typewriter-effect";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import ContactForm from "../../components/ContactForm/ContactForm";
+
+const contentVariant = {
+  hidden: {
+    y: "100vh",
+  },
+  visible: {
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 75,
+    },
+  },
+};
+
+const cardVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 75,
+      delay: 0.5,
+      duration: 1,
+    },
+  },
+};
 
 function Home() {
+  const [isActive, setIsActive] = useState(false);
   return (
     <div className={styles.page}>
       <div className={styles.container}>
-        <div className={styles.contentContainer}>
+        <motion.div
+          className={styles.contentContainer}
+          variants={contentVariant}
+          initial="hidden"
+          animate="visible"
+          transition="transition"
+        >
           <p className={styles.mainTitle}>Web & App Developer</p>
           <div className={styles.title}>
             <TypewriterComponent
               onInit={(typewriter) => {
                 typewriter
                   .pauseFor(500)
-                  .changeDelay(40)
+                  .changeDelay(30)
                   .typeString("Hey you! Glad you looked me up! 👀")
                   .start();
               }}
@@ -31,10 +69,26 @@ function Home() {
             of knowledge and new skills, and I believe I have a keen eye for
             design.
           </p>
-        </div>
-        <div className={styles.profileCardContainer}>
-          <ProfileCard></ProfileCard>
-        </div>
+        </motion.div>
+        {isActive ? (
+          <div className={styles.sideContainer}>
+            <ContactForm
+              changeIsActive={(isActive) => setIsActive(isActive)}
+            ></ContactForm>
+          </div>
+        ) : (
+          <motion.div
+            className={styles.sideContainer}
+            variants={cardVariant}
+            initial="hidden"
+            animate="visible"
+            transition="transition"
+          >
+            <ProfileCard
+              changeIsActive={(isActive) => setIsActive(isActive)}
+            ></ProfileCard>
+          </motion.div>
+        )}
       </div>
     </div>
   );

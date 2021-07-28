@@ -1,15 +1,29 @@
-import styles from './ProfileCard.module.css';
+import styles from "./ProfileCard.module.css";
 import { loadAnimation } from "lottie-web";
 import { defineLordIconElement } from "lord-icon-element";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { motion } from "framer-motion";
+import CustomButton from "../CustomButton/CustomButton";
 
-function ProfileCard() {
+const hoverVariant = {
+  hover: {
+    scale: 1.25,
+    originX: 0,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+    },
+  },
+};
+
+function ProfileCard(props) {
   defineLordIconElement(loadAnimation);
   return (
     <div className={styles.profileCard}>
       <div className={styles.genInfo}>
-        <img className={styles.avatar}
+        <img
+          className={styles.avatar}
           src={`${process.env.PUBLIC_URL}/assets/images/Avatar.png`}
         ></img>
         <div className={styles.namePane}>
@@ -37,11 +51,33 @@ function ProfileCard() {
           <span>tumarahmed@gmail.com</span>
         </div>
       </div>
-      <div className={styles.contactLinks}>
-        <IconContext.Provider value={{ size: "1.25em" }}>
-          <FaGithub className={styles.socialIcon}></FaGithub>
-          <FaLinkedin className={styles.socialIcon}></FaLinkedin>
-        </IconContext.Provider>
+      <div className={styles.profileFooter}>
+        <div className={styles.contactLinks}>
+          <IconContext.Provider value={{ size: "1.25em" }}>
+            <motion.a
+              href="https://github.com/UmarAhmed30"
+              target="_blank"
+              variants={hoverVariant}
+              whileHover="hover"
+              transition="transiton"
+            >
+              <FaGithub className={styles.socialIcon}></FaGithub>
+            </motion.a>
+            <motion.a
+              href="https://www.linkedin.com/in/umarahmed2000/"
+              target="_blank"
+              variants={hoverVariant}
+              whileHover="hover"
+              transition="transiton"
+            >
+              <FaLinkedin className={styles.socialIcon}></FaLinkedin>
+            </motion.a>
+          </IconContext.Provider>
+        </div>
+        <CustomButton
+          onPress={(value) => props.changeIsActive(value)}
+          title={"Say Hello"}
+        ></CustomButton>
       </div>
     </div>
   );

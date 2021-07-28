@@ -1,0 +1,30 @@
+.projectMenu {
+    display: flex;
+    overflow-x: auto;
+    margin: 2rem 0;
+  }
+  
+  .projectMenu::-webkit-scrollbar {
+      width: 0;
+  }
+
+  .pickBtn {
+    margin: 0.5rem 0.25rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border: none;
+    font-size: 0.75rem;
+    background-color: #0a1931;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

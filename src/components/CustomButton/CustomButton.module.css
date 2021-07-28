@@ -1,0 +1,24 @@
+.msgBtn {
+  background-color: #08c18a;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  width: 100px;
+  height: 40px;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.msgBtn:hover {
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.75);
+}
+
+/* Mobile only */
+@media only screen and (max-width: 767px) {
+  .msgBtn {
+    width: 75px;
+    height: 35px;
+    font-size: 0.75rem;
+  }
+}

@@ -2,35 +2,28 @@ import Home from "./pages/Home/Home";
 import Projects from "./pages/Projects/Projects";
 import Skills from "./pages/Skills/Skills";
 import Navbar from "./components/Navbar/Navbar";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Route, Redirect, Switch } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
-
+toast.configure();
 function App() {
   return (
     <div>
-      <Router>
-          <Switch>
-            <Route path="/home" exact>
-              <Home></Home>
-            </Route>
-            <Route path="/projects" exact>
-              <Projects></Projects>
-            </Route>
-            <Route path="/skills" exact>
-              <Skills></Skills>
-            </Route>
-            <Redirect to="/"></Redirect>
-          </Switch>
-        <Navbar></Navbar>
-      </Router>
+      <Switch>
+        <Route path="/" exact>
+          <Home></Home>
+        </Route>
+        <Route path="/projects" exact>
+          <Projects></Projects>
+        </Route>
+        <Route path="/skills" exact>
+          <Skills></Skills>
+        </Route>
+        <Redirect to="/"></Redirect>
+      </Switch>
+      <Navbar></Navbar>
     </div>
   );
 }
