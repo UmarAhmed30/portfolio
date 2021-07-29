@@ -24,6 +24,7 @@ function Projects() {
 
   return (
     <div className={styles.page}>
+      <ImageLoader></ImageLoader>
       <div className={styles.container}>
         <motion.div
           variants={headerVariant}

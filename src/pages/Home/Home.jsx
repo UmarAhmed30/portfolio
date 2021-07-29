@@ -37,7 +37,6 @@ function Home() {
   const [isActive, setIsActive] = useState(false);
   return (
     <div className={styles.page}>
-      <ImageLoader></ImageLoader>
       <div className={styles.container}>
         <motion.div
           className={styles.contentContainer}
