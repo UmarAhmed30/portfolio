@@ -137,7 +137,7 @@ export const SkillsData = [
     },
     {
         id: 18,
-        skill: 'SQL',
+        skill: 'SQLPlus',
         icon: `${process.env.PUBLIC_URL}/assets/icons/oracle.png`,
         contColor: 'rgba(234, 27, 34, 0.075)',
         iconContColor: 'rgba(234, 27, 34, 0.1)',
@@ -145,6 +145,14 @@ export const SkillsData = [
     },
     {
         id: 19,
+        skill: 'MySQL',
+        icon: `${process.env.PUBLIC_URL}/assets/icons/mysql.png`,
+        contColor: 'rgba(3, 126, 131, 0.075)',
+        iconContColor: 'rgba(3, 126, 131, 0.1)',
+        group: 'Database Management'
+    },
+    {
+        id: 20,
         skill: 'Git',
         icon: `${process.env.PUBLIC_URL}/assets/icons/git.png`,
         contColor: 'rgba(222, 76, 54, 0.075)',

@@ -1,6 +1,7 @@
 import styles from "./Project.module.css";
 import SkillCard from "../../components/SkillCard/SkillCard";
 import { FaGithub } from "react-icons/fa";
+import { HiLink } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 const hoverVariant = {
@@ -66,9 +67,8 @@ function Project(props) {
             })}
           </div>
         </div>
-        <div className={styles.source}>
-          <p>Source Code:</p>
-          <motion.a
+        <div className={styles.links}>
+          {props.project.gitLink != null && (<motion.a
             href={props.project.gitLink}
             target="_blank"
             className={styles.socialIcon}
@@ -76,8 +76,21 @@ function Project(props) {
             whileHover="hover"
             transition="transiton"
           >
-            <FaGithub></FaGithub>
+            <FaGithub size="24"></FaGithub>
           </motion.a>
+          )}
+          {props.project.proLink != null && (
+            <motion.a
+              href={props.project.proLink}
+              target="_blank"
+              className={styles.socialIcon}
+              variants={hoverVariant}
+              whileHover="hover"
+              transition="transiton"
+            >
+              <HiLink size="24"></HiLink>
+            </motion.a>
+          )}
         </div>
       </div>
       <div className={styles.previewContainer}>

@@ -65,7 +65,7 @@ const imgVariant = {
 
 const hoverVariant = {
   hover: {
-    scale: 1.1,
+    scale: 1.2,
     originX: 0,
     transition: {
       type: "spring",

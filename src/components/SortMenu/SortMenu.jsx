@@ -1,6 +1,7 @@
 import styles from "./SortMenu.module.css";
 import { skillSets } from "../../data/SkillSet";
 import { motion } from "framer-motion";
+import { ProjectData } from "../../data/ProjectData";
 
 const menuVariant = {
   hidden: {

@@ -29,7 +29,7 @@ function ProjectMenu(props) {
         return (
           <button
             className={styles.pickBtn}
-            onClick={props.changeProject(project)}
+            onClick={() => props.changeProject(project)}
             style={{ backgroundColor: project === props.project && "#112a52" }}
           >
             {project.proName}
