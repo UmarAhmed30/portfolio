@@ -76,7 +76,7 @@ export const ProjectData = [
     proName: "Handwritten Text Recognition",
     proNameColor: "#0271D1",
     proDesc:
-      "A website that converts handwritten text to digitized format using Convolutional Neural Network, Bidirectional Long Short-term Memory and Recurrent Neural Network.",
+      "A website that converts handwritten text to digitized format using Convolutional Neural Network, Bidirectional Long Short-term Memory and Recurrent Neural Network.",
     proContColor: "rgba(2, 113, 209, 0.1)",
     tools: [SkillsData[4], SkillsData[5], SkillsData[6], SkillsData[7], SkillsData[8], SkillsData[8], '#python', '#tensorflow'],
     imgLink: `${process.env.PUBLIC_URL}/assets/images/Projects/htr.jpg`,
