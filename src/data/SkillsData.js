@@ -163,80 +163,80 @@ export const SkillsData = [
         id: 21,
         skill: 'Python',
         icon: `${process.env.PUBLIC_URL}/assets/icons/python.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(254, 226, 100, 0.075)',
+        iconContColor: 'rgba(254, 226, 100, 0.1)',
         group: 'Programming Languages'
     },
     {
         id: 22,
         skill: 'FastAPI',
         icon: `${process.env.PUBLIC_URL}/assets/icons/fastapi.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(13, 155, 142, 0.075)',
+        iconContColor: 'rgba(13, 155, 142, 0.1)',
         group: 'Back-end Frameworks'
     },
     {
         id: 23,
         skill: 'Ruby',
         icon: `${process.env.PUBLIC_URL}/assets/icons/ruby.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(166, 20, 9, 0.075)',
+        iconContColor: 'rgba(166, 20, 9, 0.1)',
         group: 'Programming Languages'
     },
     {
         id: 24,
         skill: 'Ruby on Rails',
         icon: `${process.env.PUBLIC_URL}/assets/icons/ruby_on_rails.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(212, 8, 9, 0.075)',
+        iconContColor: 'rgba(212, 8, 9, 0.1)',
         group: 'Back-end Frameworks'
     },
     {
         id: 25,
         skill: 'Docker',
         icon: `${process.env.PUBLIC_URL}/assets/icons/docker.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(36, 104, 238, 0.075)',
+        iconContColor: 'rgba(36, 104, 238, 0.1)',
         group: 'Tools'
     },
     {
         id: 26,
         skill: 'MongoDB',
         icon: `${process.env.PUBLIC_URL}/assets/icons/mongo.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(23, 173, 85, 0.075)',
+        iconContColor: 'rgba(23, 173, 85, 0.1)',
         group: 'Database Management'
     },
     {
         id: 27,
         skill: 'Redis',
         icon: `${process.env.PUBLIC_URL}/assets/icons/redis.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(202, 54, 52, 0.075)',
+        iconContColor: 'rgba(202, 54, 52, 0.1)',
         group: 'Tools'
     },
     {
         id: 28,
         skill: 'ELK Stack',
         icon: `${process.env.PUBLIC_URL}/assets/icons/elk.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(61, 168, 152, 0.075)',
+        iconContColor: 'rgba(61, 168, 152, 0.1)',
         group: 'Tools'
     },
     {
         id: 29,
         skill: 'AWS',
         icon: `${process.env.PUBLIC_URL}/assets/icons/aws.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(255, 156, 8, 0.075)',
+        iconContColor: 'rgba(255, 156, 8, 0.1)',
         group: 'Tools'
     },
     {
         id: 30,
         skill: 'Kubernetes',
         icon: `${process.env.PUBLIC_URL}/assets/icons/kubernetes.png`,
-        contColor: 'rgba(222, 76, 54, 0.075)',
-        iconContColor: 'rgba(222, 76, 54, 0.1)',
+        contColor: 'rgba(56, 113, 230, 0.075)',
+        iconContColor: 'rgba(56, 113, 230, 0.1)',
         group: 'Tools'
     },
 ];

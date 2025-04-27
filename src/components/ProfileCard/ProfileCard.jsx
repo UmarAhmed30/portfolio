@@ -27,8 +27,8 @@ function ProfileCard(props) {
           src={`${process.env.PUBLIC_URL}/assets/images/Avatar.png`}
         ></img>
         <div className={styles.namePane}>
-          <span className={styles.title}>T Umar Ahmed</span>
-          <span>Web & App Developer</span>
+          <span className={styles.title}>Umar Ahmed T</span>
+          <span>Software Development Engineer</span>
         </div>
       </div>
       <div className={styles.contactInfo}>
@@ -39,7 +39,7 @@ function ProfileCard(props) {
               src={`${process.env.PUBLIC_URL}/assets/icons/location.json`}
             ></lord-icon>
           </span>
-          <span>Chennai, India</span>
+          <span>Bangalore, Karnataka, India</span>
         </div>
         <div className={styles.infoItem}>
           <span>
@@ -48,7 +48,7 @@ function ProfileCard(props) {
               src={`${process.env.PUBLIC_URL}/assets/icons/email.json`}
             ></lord-icon>
           </span>
-          <span>tumarahmed@gmail.com</span>
+          <span>umar.ahmed.t.30@gmail.com</span>
         </div>
       </div>
       <div className={styles.profileFooter}>

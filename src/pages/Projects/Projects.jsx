@@ -1,6 +1,7 @@
 import styles from "./Projects.module.css";
 import ProjectMenu from "../../components/ProjectMenu/ProjectMenu";
 import Project from "../../components/Project/Project";
+import ImageLoader from "../../components/ImageLoader/ImageLoader"
 import { useState } from "react";
 import { ProjectData } from "../../data/ProjectData";
 import TypewriterComponent from "typewriter-effect";
