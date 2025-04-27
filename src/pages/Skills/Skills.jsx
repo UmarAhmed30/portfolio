@@ -158,7 +158,7 @@ function Skills() {
             transition="transition"
           >
             <a
-              href="https://drive.google.com/file/d/1hIuIUcDJAvzJgYgJOi-Nc2lraIVRj0uf/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RPuP9QqwqTK50VbbBlSNmHmt5gBLrY9I/view?usp=sharing"
               target="_blank"
             >
               <motion.img

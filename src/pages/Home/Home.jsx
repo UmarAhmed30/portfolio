@@ -58,16 +58,7 @@ function Home() {
             />
           </div>
           <p className={styles.content}>
-            I am a web & app developer with good experience in ReactJS,
-            AngularJS and Flutter. I have built a considerable amount of
-            applications of varying degrees of complexity.
-          </p>
-          <p className={styles.content}>
-            If you're wondering, I'm a student currently pursuing B.E Computer
-            Science and Engineering at College of Engineering, Chennai. I might
-            describe myself as an enthusiastic and hardworking student in thirst
-            of knowledge and new skills, and I believe I have a keen eye for
-            design.
+            A passionate Software Development Engineer focused on building real-time data pipelines for AI-powered solutions, driven by a relentless pursuit of knowledge and excellence. I specialize in web development, scalable backend systems, and machine learning infrastructure, with a keen eye for both system architecture and UI design.
           </p>
         </motion.div>
         {isActive ? (
