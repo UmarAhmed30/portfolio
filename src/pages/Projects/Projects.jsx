@@ -40,7 +40,7 @@ function Projects() {
                 typewriter
                   .pauseFor(1000)
                   .changeDelay(30)
-                  .typeString("These are the projects I've worked on so far.")
+                  .typeString("These are the applications I've worked on so far.")
                   .start();
               }}
             />

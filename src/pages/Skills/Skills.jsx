@@ -144,7 +144,7 @@ function Skills() {
                   typewriter
                     .pauseFor(2000)
                     .changeDelay(30)
-                    .typeString("Check my Resume out for more info.")
+                    .typeString("Check my resume out for more info.")
                     .start();
                 }}
               />

@@ -58,7 +58,7 @@ function Home() {
             />
           </div>
           <p className={styles.content}>
-            A passionate engineer focused on building real-time data pipelines for AI-powered solutions, driven by a relentless pursuit of knowledge and excellence. I specialize in web development, scalable backend systems, and machine learning infrastructure, with a keen eye for both system architecture and UI design.
+            A passionate engineer currently building real-time data pipelines for AI-powered solutions, driven by a relentless pursuit of knowledge and excellence. I specialize in web development, scalable backend systems, and machine learning infrastructure, with a keen eye for both system architecture and UI design.
           </p>
         </motion.div>
         {isActive ? (
