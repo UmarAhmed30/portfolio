@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font loaded via next/font in layout.tsx */
+
+:root {
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --theme-bg-color: #000000;
+  --theme-text-color: #FFFFFF;
+  --theme-header-color: #FFFFFF;
+  --theme-muted-color: rgba(255, 255, 255, 0.7);
+  --theme-selection-bg: #333333;
+  --theme-selection-text: #FFFFFF;
+}
+
+/* Text selection styling */
+::selection {
+  background-color: var(--theme-selection-bg);
+  color: var(--theme-selection-text);
+}
+
+::-moz-selection {
+  background-color: var(--theme-selection-bg);
+  color: var(--theme-selection-text);
+}
+
+html, body {
+  background-color: var(--theme-bg-color);
+}
+
+body {
+  color: var(--theme-text-color);
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500;
+  min-height: 100vh;
+}
+
+
+/* Note: Using Open Sans from Google Fonts as the primary typeface. */
+
+/* Custom slider styling */
+input[type="range"] {
+  -webkit-appearance: slider-vertical;
+  appearance: slider-vertical;
+  width: 8px;
+  height: 96px;
+  background: transparent;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: hsl(var(--theme-hue), 60%, 50%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(var(--theme-hue), 10%, 20%);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: hsl(var(--theme-hue), 60%, 50%);
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(var(--theme-hue), 10%, 20%);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 2px;
+  background: hsl(var(--theme-hue), 10%, 80%);
+  height: 96px;
+  transition: background 0.3s ease;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 2px;
+  background: hsl(var(--theme-hue), 10%, 80%);
+  height: 96px;
+  transition: background 0.3s ease;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes radiate {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 0.6;
+  }
+  70% {
+    box-shadow: 0 0 0 20px transparent;
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+    opacity: 0;
+  }
+}
+
+.animate-radiate {
+  animation: radiate 2s ease-out infinite;
+}
+
