@@ -12,7 +12,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Billy Sweeney — Designer",
+  title: "Umar Ahmed — SWE",
   description: "Designer focused on creating beautiful, human-centered digital experiences",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.className} antialiased`} suppressHydrationWarning>
+      <body className={`${outfit.className} antialiased overflow-x-hidden`} suppressHydrationWarning>
         <ColorProvider>
           <SideSlider />
         <StatusBanner />

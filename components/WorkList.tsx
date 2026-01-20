@@ -1,74 +1,97 @@
 'use client';
 
 import { useColor } from '@/contexts/ColorContext';
+import AdaptiveLogo from './AdaptiveLogo';
 
 const projects = [
     {
-        logo: "F",
-        title: "Figma",
-        role: "Product Designer",
+        logo: "/images/logos/cub.png",
+        title: "University of Colorado Boulder",
+        role: "Course Grader",
         year: "Now",
-        location: "Seattle",
-        description: "Working on design systems products."
+        location: "Boulder",
+        description: "CU_BOULDER_COURSES" // Special marker for custom rendering
     },
     {
-        logo: "C",
-        title: "Cocoon",
-        role: "Director of Design",
-        year: "2023",
-        location: "Seattle",
-        description: "I led and executed design across product and brand, built a team from the ground up, significantly increased conversion, and directed a company rebrand, as we worked to build the leave management platform our loved ones deserve."
+        logo: "/images/logos/cub.png",
+        title: "Alferd Packer Grill",
+        role: "Student Assistant",
+        year: "2025",
+        location: "Boulder",
+        description: "Served students at the UMC, ensuring a positive dining experience while supporting team operations and maintaining service standards."
     },
     {
-        logo: "D",
-        title: "Dropbox",
-        role: "Staff Product Designer",
-        year: "2020–2022",
-        location: "Seattle",
-        description: "I led the design of a complete web product redesign, several emerging zero to one products, as well as global navigation systems and information architecture for the company's multi-product strategy."
+        logo: "/images/logos/phronetic.png",
+        title: "Phronetic AI (now Nueromind Technologies)",
+        role: "SDE (ML)",
+        year: "2024–2025",
+        location: "Bangalore",
+        description: "Architected the core infrastructure for AI-powered MVPs as a Founding Engineer. Built real-time ML pipelines, LLM-based services, and scalable backend systems using Python, Redis, AWS and MongoDB."
     },
     {
-        logo: "F",
-        title: "Facebook",
-        role: "Product Designer",
-        year: "2018–2020",
-        location: "Seattle",
-        description: "I worked on Marketplace, leading design for the browse feed, buyer platform, vehicles category, and design systems, enabling dozens of teams to ship with consistency and performance to hundreds of millions of users."
+        logo: "/images/logos/infibeam.png",
+        title: "Infibeam Avenues",
+        role: "SDE",
+        year: "2022–2024",
+        location: "Bangalore",
+        description: "Built microservices for the JioMart e-commerce platform serving 11M+ monthly users using Ruby on Rails, MySQL, AngularJS, Redis, and Kubernetes. Was a part of: Catalog Management System (B2B + B2C), Seller Portal and Just-In-Time Inventory Management."
     },
     {
-        logo: "T",
-        title: "Thread",
-        role: "Head of Design",
-        year: "2017–2018",
-        location: "London",
-        description: "I was brought on to both lead and individually execute design across all company initiatives as we built a deeply personalized online shopping product which blended a team of human stylists with machine learning."
+        logo: "/images/logos/totallr.png",
+        title: "Totallr Technologies",
+        role: "SDE Intern",
+        year: "2021",
+        location: "Chennai",
+        description: "Worked on a Point-of-Sale application using Spring Boot and Angular."
     },
     {
-        logo: "S",
-        title: "Squarespace",
-        role: "Design Lead",
-        year: "2011–2017",
-        location: "New York · Portland",
-        description: "As an early design hire, I wore many hats across brand and product design during my tenure, helping to redefine web publishing and establish the company into household name."
-    },
-    {
-        logo: "F",
-        title: "Freelance",
-        role: "Designer and Director",
-        year: "2008–2019",
-        location: "New York · London · Seattle · Portland · Tempe",
-        description: "I've been commissioned to create custom websites, apps, and identity systems for select clients including National Geographic photographers, Academy award-winning film-makers, and global entrepreneurs."
+        logo: "/images/logos/vdart.png",
+        title: "VDart Digital",
+        role: "Technocrat Intern",
+        year: "2020",
+        location: "Atlanta",
+        description: "Designed and delivered mobile interfaces for clients using Flutter and Figma."
     },
 ];
 
 export default function WorkList() {
-    const { headerColor, textColor } = useColor();
+    const { headerColor, textColor, mutedColor } = useColor();
 
     return (
         <section id="work" className="mb-48">
             {/* Background content */}
             <p className="max-w-[60ch] leading-relaxed text-base font-medium mb-24" style={{ color: headerColor }}>
-                I studied visual communication design, got my start in branding, marketing, and web design, then evolved to specialize in product design. Leveraging my visual design foundation and deep user empathy, I've established myself as a well rounded design leader who creates human-centered platforms with cohesive throughlines at every touchpoint: from vision and strategy, to brand awareness and marketing, to product development and delightful micro interactions. Throughout my 15 years of professional experience, I've worked freelance, in-house, at startups, and at established public companies, developing a wide range of multi-disciplinary skills in diverse contexts. My insatiable curiosity, high craft, and adaptability, enable me to generate impact in our ever-changing environment.
+                My passion for tech came from my{' '}
+                <a 
+                    href="https://www.linkedin.com/in/eshrath/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{
+                        textDecoration: 'underline',
+                        textDecorationStyle: 'dotted',
+                        textUnderlineOffset: '2px',
+                        textDecorationThickness: '1px',
+                        textDecorationColor: mutedColor,
+                    }}
+                >
+                    uncle
+                </a>
+                , a first-generation software engineer who moved to the US for work, and my{' '}
+                <a 
+                    href="https://www.linkedin.com/in/haafeeza/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{
+                        textDecoration: 'underline',
+                        textDecorationStyle: 'dotted',
+                        textUnderlineOffset: '2px',
+                        textDecorationThickness: '1px',
+                        textDecorationColor: mutedColor,
+                    }}
+                >
+                    mom
+                </a>
+                , an assistant professor who taught computer science. It led me to study computer science and engineering. Fascinated by the idea of creating for a mass audience, I started building event websites at my undergraduate university. I began my career at Infibeam working on e-commerce systems at scale, then transitioned to Nueromind Technologies in the AI space, where I learned to build products from the ground up. Both were invaluable experiences that shaped how I think about systems: one taught me to develop and manage at scale, the other to build from zero. My time at Nueromind pushed me to pursue graduate studies, and I&apos;m currently at CU Boulder for my Master&apos;s in Computer Science, focusing on systems that power AI and ML applications. Throughout my academic and professional experience, I&apos;ve developed skills across backend development, cloud infrastructure, and AI-powered products. My curiosity drives me to tackle hard problems, my ownership mindset keeps me accountable end to end, and my love for learning keeps me growing with every challenge.
             </p>
             
             {/* Work list */}
@@ -76,7 +99,18 @@ export default function WorkList() {
                 {projects.map((p) => (
                     <li key={p.title} className="flex flex-col">
                         <div>
-                            <div className="text-6xl font-medium mb-8" style={{ color: headerColor }}>{p.logo}</div>
+                            {p.logo.startsWith('/') ? (
+                                <div className="mb-8">
+                                    <AdaptiveLogo 
+                                        src={p.logo}
+                                        alt={p.title}
+                                        size={64}
+                                        logoScale={0.6}
+                                    />
+                                </div>
+                            ) : (
+                                <div className="text-6xl font-medium mb-8" style={{ color: headerColor }}>{p.logo}</div>
+                            )}
                             <h3 className="font-medium text-xl mb-4" style={{ color: headerColor }}>{p.title}</h3>
                             <p 
                                 className="font-medium mb-6" 
@@ -94,7 +128,74 @@ export default function WorkList() {
                             </div>
                         </div>
                         <div className="text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
-                            <p>{p.description}</p>
+                            {p.description === "CU_BOULDER_COURSES" ? (
+                                <div className="flex flex-col gap-4">
+                                    <p>Designed rubrics, graded assignments and exams, and provided feedback to help students improve their understanding of course material.</p>
+                                    
+                                    {/* Simple line-by-line course listing */}
+                                    <div className="flex flex-col gap-3 mt-2">
+                                        <div className="leading-relaxed">
+                                            <a 
+                                                href="https://gowthamk.github.io/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                CSCI 3155: Principles of Programming Languages
+                                            </a>
+                                            <span style={{ color: mutedColor }}> •• Gowtham Kaki</span>
+                                        </div>
+                                        <div className="leading-relaxed">
+                                            <a 
+                                                href="https://zhengxiao.math.colorado.edu/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                MATH 2130: Introduction to Linear Algebra
+                                            </a>
+                                            <span style={{ color: mutedColor }}> •• Zheng Xiao</span>
+                                        </div>
+                                        <div className="leading-relaxed">
+                                            <a 
+                                                href="https://math.colorado.edu/~mayr/"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                MATH 2001: Introduction to Discrete Mathematics
+                                            </a>
+                                            <span style={{ color: mutedColor }}> •• Peter Mayr</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <p>{p.description}</p>
+                            )}
                         </div>
                     </li>
                 ))}

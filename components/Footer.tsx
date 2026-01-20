@@ -51,7 +51,7 @@ export default function Footer() {
                                     lineHeight: '38px',
                                 }}
                             >
-                                I've recently joined Figma.
+                                I&apos;ve recently joined Figma.
                             </p>
                         </div>
                     </div>

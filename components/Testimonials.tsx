@@ -35,11 +35,6 @@ export default function Testimonials() {
             author: "Bec Lai",
             title: "Staff Product Designer",
         },
-        {
-            quote: "He is average (:p)",
-            author: "Owais The Great and Ultimate Majesty",
-            title: "King of US",
-        },
     ];
 
     return (
@@ -55,7 +50,7 @@ export default function Testimonials() {
                                 lineHeight: '36px',
                             }}
                         >
-                            "{testimonial.quote}"
+                            &ldquo;{testimonial.quote}&rdquo;
                         </p>
                         <div className="flex items-center gap-2">
                             <span 

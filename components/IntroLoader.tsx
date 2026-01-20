@@ -60,7 +60,7 @@ export default function IntroLoader() {
                         lineHeight: '76px',
                     }}
                 >
-                    Billy Sweeney
+                    Umar Ahmed Thameem Ahmed
                 </h1>
                 <p 
                     className="font-medium"
@@ -70,7 +70,7 @@ export default function IntroLoader() {
                         lineHeight: '76px',
                     }}
                 >
-                    —Designer
+                    — CS Grad Student @ CU Boulder
                 </p>
             </div>
         </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { colorPalette } from '@/utils/colorUtils';
 
 interface ColorSliderProps {
@@ -15,8 +15,6 @@ interface ColorSliderProps {
 export default function ColorSlider({ 
     value, 
     onChange, 
-    min = 0, 
-    max = 16, 
     steps = 17,
     textColor = '#FFFFFF'
 }: ColorSliderProps) {
@@ -28,9 +26,9 @@ export default function ColorSlider({
         onChangeRef.current = onChange;
     }, [onChange]);
 
-    const getValueFromStep = (step: number) => {
+    const getValueFromStep = useCallback((step: number) => {
         return Math.max(0, Math.min(steps - 1, step));
-    };
+    }, [steps]);
 
     const getStepFromValue = (val: number) => {
         return Math.max(0, Math.min(steps - 1, Math.round(val)));
@@ -38,7 +36,7 @@ export default function ColorSlider({
 
     const currentStep = getStepFromValue(value);
 
-    const handleInteraction = (clientY: number) => {
+    const handleInteraction = useCallback((clientY: number) => {
         if (!sliderRef.current) return;
         
         const rect = sliderRef.current.getBoundingClientRect();
@@ -49,7 +47,7 @@ export default function ColorSlider({
         const newValue = getValueFromStep(clampedStep);
         
         onChangeRef.current(newValue);
-    };
+    }, [steps, getValueFromStep]);
 
     const handleMouseDown = (e: React.MouseEvent) => {
         e.preventDefault();
@@ -77,7 +75,7 @@ export default function ColorSlider({
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseup', handleMouseUp);
         };
-    }, [isDragging]);
+    }, [isDragging, handleInteraction]);
 
     const thumbPosition = ((currentStep / (steps - 1)) * 100);
 

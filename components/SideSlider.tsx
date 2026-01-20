@@ -13,6 +13,7 @@ export default function SideSlider() {
         { id: 'intro', label: 'Intro' },
         { id: 'values', label: 'Values' },
         { id: 'work', label: 'Background' },
+        { id: 'projects', label: 'Projects' },
         { id: 'references', label: 'References' },
         { id: 'about', label: 'About' },
         { id: 'contact', label: 'Contact' },
@@ -34,13 +35,14 @@ export default function SideSlider() {
 
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []); // navItems is a constant array, safe to omit from dependencies
 
     const scrollToSection = (id: string) => {
         setActiveSection(id);
         const element = document.getElementById(id);
         if (element) {
-            const offset = 80;
+            const offset = id === 'projects' ? 0 : 80; // No offset for full-screen projects section
             const elementPosition = element.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - offset;
             window.scrollTo({
@@ -54,16 +56,16 @@ export default function SideSlider() {
         <>
             {/* Left side - Logo and Navigation (centered vertically) */}
             <div 
-                className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-start z-50"
+                className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-start z-50 max-md:left-2"
             >
                 {/* Logo/Name */}
                 <div 
-                    className="font-medium mb-8 whitespace-nowrap flex cursor-default"
+                    className="font-medium mb-8 whitespace-nowrap flex cursor-default max-md:mb-6"
                     style={{ fontSize: '30px', color: headerColor }}
                     onMouseEnter={() => setIsHoveringLogo(true)}
                     onMouseLeave={() => setIsHoveringLogo(false)}
                 >
-                    <span>B</span>
+                    <span>U</span>
                     <span
                         style={{
                             display: 'inline-block',
@@ -74,7 +76,7 @@ export default function SideSlider() {
                             transition: 'opacity 0.4s ease-out, max-width 0.4s ease-out, transform 0.4s ease-out',
                         }}
                     >
-                        illy Sweeney
+                        mar Ahmed
                     </span>
                 </div>
 
@@ -84,10 +86,11 @@ export default function SideSlider() {
                         <button
                             key={item.id}
                             onClick={() => scrollToSection(item.id)}
-                            className="transition-colors duration-200"
+                            className="transition-colors duration-200 hover:opacity-80"
                             style={{ 
                                 color: activeSection === item.id ? headerColor : textColor,
                                 fontSize: '13px',
+                                fontWeight: activeSection === item.id ? '500' : '400',
                             }}
                             title={item.label}
                         >
@@ -99,7 +102,7 @@ export default function SideSlider() {
 
             {/* Right side - Color Slider (centered vertically) */}
             <div 
-                className="fixed right-4 top-1/2 -translate-y-1/2 z-50"
+                className="fixed right-4 top-1/2 -translate-y-1/2 z-50 max-md:right-2"
             >
                 <ColorSlider
                     value={colorIndex}

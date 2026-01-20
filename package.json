@@ -1,7 +1,7 @@
 {
   "name": "billy-sweeney-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio website for Billy Sweeney - Designer",
+  "description": "Portfolio website for Umar Ahmed - SWE",
   "private": true,
   "scripts": {
     "dev": "next dev",

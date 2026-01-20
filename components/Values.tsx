@@ -8,14 +8,14 @@ export default function Values() {
     return (
         <section id="values" className="mb-48">
             <div className="mb-12">
-                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Useful</h2>
-                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Considered</h2>
-                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Beautiful</h2>
-                <h2 className="font-medium mb-8" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Well made</h2>
-            </div>
+                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Ownership</h2>
+                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Craftsmanship</h2>
+                <h2 className="font-medium mb-4" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Velocity</h2>
+                <h2 className="font-medium mb-8" style={{ color: headerColor, fontSize: '88px', lineHeight: '86px' }}>Growth</h2>
+                    </div>
             
             <p className="max-w-[60ch] leading-relaxed text-base font-medium ml-auto" style={{ color: headerColor }}>
-                These are my core design values, and I strive to imbue them in all of the work I do. I've always been making things and inventing ways to improve my surroundings. Solving a tangible need with a beautiful solution is a practice I love and resides in my core. Collaborating with a team to create a far better outcome than otherwise possible alone gives me energy. I like thinking big, working fast, yet carefully, holistically, long-term, sustainably, cross-functionally, zooming out on company strategy, and zooming in on details. I'm always improving, growing, and executing to the highest standard possible. All while achieving a larger mission, connecting my work to something deeper, tethered to improving the world, leaving it better than when I began.
+                These are my core engineering values, and I strive to bring them into everything I build. I believe in owning what you create end to end, from architecture to deployment to the 3am on-call. Good code isn&apos;t just functional but is also readable, tested, and built to evolve gracefully over time. I care about the craft, whether that&apos;s clean abstractions, thoughtful APIs, or systems that scale without drama. I move fast, but I don&apos;t break things carelessly. Velocity without quality is just technical debt in disguise. I&apos;m always learning new frameworks, new patterns, and new mental models for thinking about hard problems. And I love helping others grow too, through code reviews, pairing sessions, and sharing what I&apos;ve picked up along the way. Collaborating with a team to build something far better than any of us could alone is what gives me energy. All while connecting my work to something larger, building tools that matter and systems that serve people meaningfully.
             </p>
         </section>
     );
