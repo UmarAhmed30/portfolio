@@ -38,26 +38,24 @@ export default function Testimonials() {
     ];
 
     return (
-        <section id="references" className="mb-48">
-            <div className="grid grid-cols-2 gap-x-16 gap-y-20">
+        <section id="references" className="mb-24 md:mb-48">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-12 lg:gap-y-20">
                 {testimonials.map((testimonial, index) => (
                     <div key={index} className="flex flex-col">
                         <p 
-                            className="font-medium mb-4 leading-tight" 
+                            className="font-medium mb-3 md:mb-4 leading-tight text-lg md:text-xl lg:text-2xl" 
                             style={{ 
                                 color: headerColor,
-                                fontSize: '28px',
-                                lineHeight: '36px',
+                                lineHeight: '1.3',
                             }}
                         >
                             &ldquo;{testimonial.quote}&rdquo;
                         </p>
                         <div className="flex items-center gap-2">
                             <span 
-                                className="font-medium" 
+                                className="font-medium text-xs md:text-sm" 
                                 style={{ 
                                     color: headerColor, 
-                                    fontSize: '14px',
                                     textDecoration: 'underline',
                                     textDecorationStyle: 'dotted',
                                     textUnderlineOffset: '2px',
@@ -67,7 +65,7 @@ export default function Testimonials() {
                             >
                                 {testimonial.author}
                             </span>
-                            <span style={{ color: mutedColor, fontSize: '14px' }}>
+                            <span style={{ color: mutedColor, fontSize: '12px' }} className="md:text-sm">
                                 {testimonial.title}
                             </span>
                         </div>

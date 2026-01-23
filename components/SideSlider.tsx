@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import ColorSlider from './ColorSlider';
+import ColorSliderHorizontal from './ColorSliderHorizontal';
 import { useColor } from '@/contexts/ColorContext';
 
 export default function SideSlider() {
-    const { colorIndex, textColor, headerColor, setColorIndex } = useColor();
+    const { colorIndex, textColor, headerColor, backgroundColor, setColorIndex } = useColor();
     const [activeSection, setActiveSection] = useState('intro');
     const [isHoveringLogo, setIsHoveringLogo] = useState(false);
 
@@ -54,14 +55,34 @@ export default function SideSlider() {
 
     return (
         <>
-            {/* Left side - Logo and Navigation (centered vertically) */}
+            {/* Mobile & Tablet Navigation Header */}
+            <div className="fixed top-0 left-0 right-0 z-50 xl:hidden backdrop-blur-md bg-opacity-90" style={{ backgroundColor: `${backgroundColor}E6` }}>
+                <div className="flex flex-col px-6 sm:px-8 md:px-10 py-4 sm:py-5 gap-3">
+                    <div 
+                        className="font-medium text-lg sm:text-xl md:text-2xl"
+                        style={{ color: headerColor }}
+                    >
+                        Umar Ahmed
+                    </div>
+                    <ColorSliderHorizontal
+                        value={colorIndex}
+                        onChange={setColorIndex}
+                        min={0}
+                        max={16}
+                        steps={17}
+                        textColor={textColor}
+                    />
+                </div>
+            </div>
+
+            {/* Desktop Navigation - Left side - Logo and Navigation (centered vertically) */}
             <div 
-                className="fixed left-4 top-1/2 -translate-y-1/2 flex flex-col items-start z-50 max-md:left-2"
+                className="fixed left-3 sm:left-4 md:left-4 lg:left-4 top-1/2 -translate-y-1/2 flex-col items-start z-50 hidden xl:flex"
             >
                 {/* Logo/Name */}
                 <div 
-                    className="font-medium mb-8 whitespace-nowrap flex cursor-default max-md:mb-6"
-                    style={{ fontSize: '30px', color: headerColor }}
+                    className="font-medium mb-6 lg:mb-8 whitespace-nowrap flex cursor-default"
+                    style={{ fontSize: '28px', color: headerColor }}
                     onMouseEnter={() => setIsHoveringLogo(true)}
                     onMouseLeave={() => setIsHoveringLogo(false)}
                 >
@@ -86,10 +107,9 @@ export default function SideSlider() {
                         <button
                             key={item.id}
                             onClick={() => scrollToSection(item.id)}
-                            className="transition-colors duration-200 hover:opacity-80"
+                            className="transition-colors duration-200 hover:opacity-80 text-xs lg:text-sm"
                             style={{ 
                                 color: activeSection === item.id ? headerColor : textColor,
-                                fontSize: '13px',
                                 fontWeight: activeSection === item.id ? '500' : '400',
                             }}
                             title={item.label}
@@ -102,7 +122,7 @@ export default function SideSlider() {
 
             {/* Right side - Color Slider (centered vertically) */}
             <div 
-                className="fixed right-4 top-1/2 -translate-y-1/2 z-50 max-md:right-2"
+                className="fixed right-3 sm:right-4 md:right-4 lg:right-4 top-1/2 -translate-y-1/2 z-50 hidden xl:block"
             >
                 <ColorSlider
                     value={colorIndex}

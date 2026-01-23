@@ -58,9 +58,14 @@ export default function WorkList() {
     const { headerColor, textColor, mutedColor } = useColor();
 
     return (
-        <section id="work" className="mb-48">
+        <section id="work" className="mb-16 sm:mb-24 md:mb-36 lg:mb-48">
+            {/* Section Title - Mobile/Tablet Only */}
+            <h2 className="text-2xl sm:text-3xl font-medium mb-8 sm:mb-10 md:mb-12 lg:hidden" style={{ color: headerColor }}>
+                Background
+            </h2>
+            
             {/* Background content */}
-            <p className="max-w-[60ch] leading-relaxed text-base font-medium mb-24" style={{ color: headerColor }}>
+            <p className="max-w-[60ch] leading-relaxed text-sm sm:text-base md:text-base font-medium mb-8 sm:mb-12 md:mb-18 lg:mb-24 lg:mx-0 px-0" style={{ color: headerColor }}>
                 My passion for tech came from my{' '}
                 <a 
                     href="https://www.linkedin.com/in/eshrath/" 
@@ -95,12 +100,12 @@ export default function WorkList() {
             </p>
             
             {/* Work list */}
-            <ul className="space-y-20">
+            <ul className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
                 {projects.map((p) => (
                     <li key={p.title} className="flex flex-col">
                         <div>
                             {p.logo.startsWith('/') ? (
-                                <div className="mb-8">
+                                <div className="mb-6 sm:mb-8">
                                     <AdaptiveLogo 
                                         src={p.logo}
                                         alt={p.title}
@@ -109,25 +114,24 @@ export default function WorkList() {
                                     />
                                 </div>
                             ) : (
-                                <div className="text-6xl font-medium mb-8" style={{ color: headerColor }}>{p.logo}</div>
+                                <div className="text-4xl sm:text-5xl md:text-6xl font-medium mb-6 sm:mb-8" style={{ color: headerColor }}>{p.logo}</div>
                             )}
-                            <h3 className="font-medium text-xl mb-4" style={{ color: headerColor }}>{p.title}</h3>
+                            <h3 className="font-medium text-base sm:text-lg md:text-xl mb-2 sm:mb-3 md:mb-4" style={{ color: headerColor }}>{p.title}</h3>
                             <p 
-                                className="font-medium mb-6" 
+                                className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" 
                                 style={{ 
                                     color: headerColor,
-                                    fontSize: '88px',
-                                    lineHeight: '86px',
+                                    lineHeight: '0.9',
                                 }}
                             >
                                 {p.role}
                             </p>
-                            <div className="text-base font-medium" style={{ color: headerColor }}>
+                            <div className="text-sm sm:text-base md:text-base font-medium" style={{ color: headerColor }}>
                                 <span>{p.year}</span>
                                 <span className="ml-2">{p.location}</span>
                             </div>
                         </div>
-                        <div className="text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
+                        <div className="text-sm sm:text-base md:text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
                             {p.description === "CU_BOULDER_COURSES" ? (
                                 <div className="flex flex-col gap-4">
                                     <p>Designed rubrics, graded assignments and exams, and provided feedback to help students improve their understanding of course material.</p>

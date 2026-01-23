@@ -28,6 +28,9 @@
 
 html, body {
   background-color: var(--theme-bg-color);
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -132,4 +135,3 @@ input[type="range"]::-moz-range-track {
 .animate-radiate {
   animation: radiate 2s ease-out infinite;
 }
-

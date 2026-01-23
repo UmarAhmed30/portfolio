@@ -36,7 +36,7 @@ export default function IntroLoader() {
 
     return (
         <div 
-            className="fixed inset-0 z-50 flex items-center"
+            className="fixed inset-0 z-50 flex items-center px-4 sm:px-6 md:px-8"
             style={{
                 backgroundColor: backgroundColor,
                 opacity: isExiting ? 0 : 1,
@@ -45,7 +45,7 @@ export default function IntroLoader() {
             }}
         >
             <div 
-                className="ml-8"
+                className="ml-0 sm:ml-4 md:ml-6 lg:ml-8"
                 style={{
                     transform: isExiting ? 'translateY(-30px)' : 'translateY(0)',
                     opacity: showContent ? (isExiting ? 0 : 1) : 0,
@@ -53,21 +53,17 @@ export default function IntroLoader() {
                 }}
             >
                 <h1 
-                    className="font-medium"
+                    className="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight sm:leading-tight md:leading-tight lg:leading-tight"
                     style={{ 
                         color: headerColor,
-                        fontSize: '72px',
-                        lineHeight: '76px',
                     }}
                 >
                     Umar Ahmed Thameem Ahmed
                 </h1>
                 <p 
-                    className="font-medium"
+                    className="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl leading-tight sm:leading-tight md:leading-tight lg:leading-tight"
                     style={{ 
                         color: headerColor,
-                        fontSize: '72px',
-                        lineHeight: '76px',
                     }}
                 >
                     — CS Grad Student @ CU Boulder

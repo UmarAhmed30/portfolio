@@ -28,12 +28,17 @@ export default function Education() {
     const { headerColor, textColor, mutedColor } = useColor();
 
     return (
-        <section id="education" className="mb-48">
-            <ul className="space-y-20">
+        <section id="education" className="mb-16 sm:mb-24 md:mb-36 lg:mb-48">
+            {/* Section Title - Mobile/Tablet Only */}
+            <h2 className="text-2xl sm:text-3xl font-medium mb-8 sm:mb-10 md:mb-12 lg:hidden" style={{ color: headerColor }}>
+                Education
+            </h2>
+            
+            <ul className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
                 {education.map((edu) => (
                     <li key={edu.school + edu.degree} className="flex flex-col">
                         <div>
-                            <div className="mb-8">
+                            <div className="mb-6 sm:mb-8">
                                 <AdaptiveLogo 
                                     src={edu.logo}
                                     alt={edu.school}
@@ -41,24 +46,23 @@ export default function Education() {
                                     logoScale={0.6}
                                 />
                             </div>
-                            <h3 className="font-medium text-xl mb-4" style={{ color: headerColor }}>{edu.school}</h3>
+                            <h3 className="font-medium text-base sm:text-lg md:text-xl mb-2 sm:mb-3 md:mb-4" style={{ color: headerColor }}>{edu.school}</h3>
                             <p 
-                                className="font-medium mb-6" 
+                                className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" 
                                 style={{ 
                                     color: headerColor,
-                                    fontSize: '88px',
-                                    lineHeight: '86px',
+                                    lineHeight: '0.9',
                                 }}
                             >
                                 {edu.degree}
                             </p>
-                            <div className="text-base font-medium" style={{ color: headerColor }}>
+                            <div className="text-sm sm:text-base md:text-base font-medium" style={{ color: headerColor }}>
                                 <span>{edu.year}</span>
                                 <span className="ml-2">{edu.location}</span>
                                 <span className="ml-2">{edu.cgpa}</span>
                             </div>
                         </div>
-                        <div className="text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
+                        <div className="text-sm sm:text-base md:text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
                             {edu.description === "CEG_ACTIVITIES" ? (
                                 <p>
                                     Built a strong foundation. Served as the Web Developer for{' '}

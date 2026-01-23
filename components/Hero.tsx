@@ -19,13 +19,13 @@ export default function Hero() {
     const { headerColor, mutedColor } = useColor();
 
     return (
-        <section id="intro" className="min-h-[70vh] flex flex-col justify-start mt-8 pt-16 mb-60" style={{ width: 'calc(69vw - 7rem)' }}>
-            <div className="mb-8 flex flex-wrap gap-x-6 gap-y-4">
+        <section id="intro" className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[65vh] lg:min-h-[70vh] flex flex-col justify-start mt-2 sm:mt-4 md:mt-6 lg:mt-8 pt-6 sm:pt-10 md:pt-12 lg:pt-16 mb-16 sm:mb-20 md:mb-24 lg:mb-60 w-full">
+            <div className="mb-4 sm:mb-6 md:mb-7 lg:mb-8 flex flex-wrap gap-x-2 sm:gap-x-3 md:gap-x-4 lg:gap-x-6 gap-y-2 sm:gap-y-3 md:gap-y-4">
                 {audiences.map((audience) => (
                     <button
                         key={audience}
                         onClick={() => setSelectedAudience(audience)}
-                        className="text-sm font-medium transition-colors"
+                        className="text-[10px] sm:text-xs md:text-sm lg:text-base font-medium transition-colors whitespace-nowrap"
                         style={{ 
                             color: selectedAudience === audience ? headerColor : mutedColor,
                         }}
@@ -36,11 +36,9 @@ export default function Hero() {
             </div>
 
             <h1 
-                className="font-medium" 
+                className="font-medium text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl leading-tight sm:leading-tight md:leading-normal" 
                 style={{ 
                     color: headerColor,
-                    fontSize: '71px',
-                    lineHeight: '84px',
                 }}
             >
                 {firstMessage}

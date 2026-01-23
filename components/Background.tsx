@@ -6,8 +6,8 @@ export default function Background() {
     const { headerColor, mutedColor } = useColor();
 
     return (
-        <section id="work" className="my-48">
-            <p className="max-w-[60ch] leading-relaxed text-base font-medium" style={{ color: headerColor }}>
+        <section id="work" className="my-24 sm:my-32 md:my-40 lg:my-48">
+            <p className="max-w-[60ch] leading-relaxed text-sm sm:text-base md:text-base font-medium lg:mx-0" style={{ color: headerColor }}>
                 My passion for tech came from my{' '}
                 <a 
                     href="https://www.linkedin.com/in/eshrath/" 

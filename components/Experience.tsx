@@ -64,12 +64,17 @@ export default function Experience() {
     const { headerColor, textColor, mutedColor } = useColor();
 
     return (
-        <section id="experience" className="mb-48">
-            <ul className="space-y-20">
+        <section id="experience" className="mb-16 sm:mb-24 md:mb-36 lg:mb-48">
+            {/* Section Title - Mobile/Tablet Only */}
+            <h2 className="text-2xl sm:text-3xl font-medium mb-8 sm:mb-10 md:mb-12 lg:hidden" style={{ color: headerColor }}>
+                Experience
+            </h2>
+            
+            <ul className="space-y-8 sm:space-y-12 md:space-y-16 lg:space-y-20">
                 {experiences.map((exp) => (
                     <li key={exp.title + exp.role} className="flex flex-col">
                         <div>
-                            <div className="mb-8">
+                            <div className="mb-6 sm:mb-8">
                                 <AdaptiveLogo 
                                     src={exp.logo}
                                     alt={exp.title}
@@ -77,7 +82,7 @@ export default function Experience() {
                                     logoScale={0.6}
                                 />
                             </div>
-                            <h3 className="font-medium text-xl mb-4">
+                            <h3 className="font-medium text-base sm:text-lg md:text-xl mb-2 sm:mb-3 md:mb-4">
                                 <a 
                                     href={exp.link}
                                     target="_blank"
@@ -96,21 +101,20 @@ export default function Experience() {
                                 </a>
                             </h3>
                             <p 
-                                className="font-medium mb-6" 
+                                className="font-medium mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl" 
                                 style={{ 
                                     color: headerColor,
-                                    fontSize: '88px',
-                                    lineHeight: '86px',
+                                    lineHeight: '0.9',
                                 }}
                             >
                                 {exp.role}
                             </p>
-                            <div className="text-base font-medium" style={{ color: headerColor }}>
+                            <div className="text-sm sm:text-base md:text-base font-medium" style={{ color: headerColor }}>
                                 <span>{exp.year}</span>
                                 <span className="ml-2">{exp.location}</span>
                             </div>
                         </div>
-                        <div className="text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
+                        <div className="text-sm sm:text-base md:text-base leading-relaxed max-w-[60ch] font-normal mt-1" style={{ color: textColor }}>
                             {exp.description === "CU_BOULDER_COURSES" ? (
                                 <div className="flex flex-col gap-4">
                                     <p>Designed rubrics, graded assignments and exams, and provided feedback to help students improve their understanding of course material.</p>
