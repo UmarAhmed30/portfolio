@@ -108,3 +108,5 @@ pids
 .kiro/cache/
 .kiro/logs/
 .kiro/temp/
+
+.kiro/

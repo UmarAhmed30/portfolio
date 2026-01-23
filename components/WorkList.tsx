@@ -91,7 +91,7 @@ export default function WorkList() {
                 >
                     mom
                 </a>
-                , an assistant professor who taught computer science. It led me to study computer science and engineering. Fascinated by the idea of creating for a mass audience, I started building event websites at my undergraduate university. I began my career at Infibeam working on e-commerce systems at scale, then transitioned to Nueromind Technologies in the AI space, where I learned to build products from the ground up. Both were invaluable experiences that shaped how I think about systems: one taught me to develop and manage at scale, the other to build from zero. My time at Nueromind pushed me to pursue graduate studies, and I&apos;m currently at CU Boulder for my Master&apos;s in Computer Science, focusing on systems that power AI and ML applications. Throughout my academic and professional experience, I&apos;ve developed skills across backend development, cloud infrastructure, and AI-powered products. My curiosity drives me to tackle hard problems, my ownership mindset keeps me accountable end to end, and my love for learning keeps me growing with every challenge.
+                , an assistant professor who taught computer science. It led me to study computer science and engineering. Fascinated by the idea of creating for a mass audience, I started building event websites at my undergraduate university. From there on I began my full-time career at Infibeam, working on e-commerce systems at scale. Later I transitioned to Nueromind Technologies and worked on some cool stuff in the AI space. Here is where I learnt to build products from the ground up. Both were invaluable experiences that shaped how I think about systems: one taught me to develop and manage at scale, the other to build from zero. My time at Nueromind Technologies also pushed me to pursue graduate studies. I&apos;m currently at CU Boulder for my Master&apos;s in Computer Science, focusing on systems that power AI and ML applications. Throughout my academic and professional experience, I&apos;ve developed skills across backend development, cloud infrastructure, and AI-powered products. My curiosity drives me to tackle hard problems, my ownership mindset keeps me accountable end to end, and my love for learning keeps me growing with every challenge.
             </p>
             
             {/* Work list */}
@@ -151,7 +151,7 @@ export default function WorkList() {
                                             >
                                                 CSCI 3155: Principles of Programming Languages
                                             </a>
-                                            <span style={{ color: mutedColor }}> •• Gowtham Kaki</span>
+                                            <span style={{ color: mutedColor }}>  •  Gowtham Kaki [Spring'26]</span>
                                         </div>
                                         <div className="leading-relaxed">
                                             <a 
@@ -170,7 +170,7 @@ export default function WorkList() {
                                             >
                                                 MATH 2130: Introduction to Linear Algebra
                                             </a>
-                                            <span style={{ color: mutedColor }}> •• Zheng Xiao</span>
+                                            <span style={{ color: mutedColor }}>  •  Zheng Xiao [Fall'25 && Spring'26]</span>
                                         </div>
                                         <div className="leading-relaxed">
                                             <a 
@@ -189,7 +189,7 @@ export default function WorkList() {
                                             >
                                                 MATH 2001: Introduction to Discrete Mathematics
                                             </a>
-                                            <span style={{ color: mutedColor }}> •• Peter Mayr</span>
+                                            <span style={{ color: mutedColor }}>  •  Peter Mayr [ Fall'25 ]</span>
                                         </div>
                                     </div>
                                 </div>

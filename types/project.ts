@@ -8,6 +8,8 @@ export interface Project {
   what: string;
   why: string;
   how: string;
+  demoLink?: string;
+  githubLink?: string;
 }
 
 export interface ProjectItemProps {

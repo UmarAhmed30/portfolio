@@ -19,7 +19,7 @@ export default function Hero() {
     const { headerColor, mutedColor } = useColor();
 
     return (
-        <section id="intro" className="min-h-[70vh] flex flex-col justify-start mt-16 pt-32 mb-60" style={{ width: 'calc(69vw - 7rem)' }}>
+        <section id="intro" className="min-h-[70vh] flex flex-col justify-start mt-8 pt-16 mb-60" style={{ width: 'calc(69vw - 7rem)' }}>
             <div className="mb-8 flex flex-wrap gap-x-6 gap-y-4">
                 {audiences.map((audience) => (
                     <button

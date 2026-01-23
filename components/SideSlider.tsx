@@ -13,9 +13,9 @@ export default function SideSlider() {
         { id: 'intro', label: 'Intro' },
         { id: 'values', label: 'Values' },
         { id: 'work', label: 'Background' },
+        { id: 'education', label: 'Education' },
+        { id: 'experience', label: 'Experience' },
         { id: 'projects', label: 'Projects' },
-        { id: 'references', label: 'References' },
-        { id: 'about', label: 'About' },
         { id: 'contact', label: 'Contact' },
     ];
 
