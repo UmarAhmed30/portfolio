@@ -137,7 +137,7 @@ export default function Experience() {
                                             >
                                                 CSCI 3155: Principles of Programming Languages
                                             </a>
-                                            <span style={{ color: mutedColor }}>  •  Gowtham Kaki [Spring'26]</span>
+                                            <span style={{ color: mutedColor }}>  •  Gowtham Kaki [Spring&apos;26]</span>
                                         </div>
                                         <div className="leading-relaxed">
                                             <a 
@@ -156,7 +156,7 @@ export default function Experience() {
                                             >
                                                 MATH 2130: Introduction to Linear Algebra
                                             </a>
-                                            <span style={{ color: mutedColor }}>  •  Zheng Xiao [Fall'25 && Spring'26]</span>
+                                            <span style={{ color: mutedColor }}>  •  Zheng Xiao [Fall&apos;25 && Spring&apos;26]</span>
                                         </div>
                                         <div className="leading-relaxed">
                                             <a 
@@ -175,7 +175,7 @@ export default function Experience() {
                                             >
                                                 MATH 2001: Introduction to Discrete Mathematics
                                             </a>
-                                            <span style={{ color: mutedColor }}>  •  Peter Mayr [ Fall'25 ]</span>
+                                            <span style={{ color: mutedColor }}>  •  Peter Mayr [ Fall&apos;25 ]</span>
                                         </div>
                                     </div>
                                 </div>

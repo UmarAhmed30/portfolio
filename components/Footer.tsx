@@ -63,7 +63,7 @@ export default function Footer() {
                                     lineHeight: '1.2',
                                 }}
                             >
-                                I'm looking for a summer internship
+                                I&apos;m looking for a summer internship
                             </p>
                         </div>
                     </div>
