@@ -7,7 +7,7 @@ const firstMessages: { [key: string]: string } = {
     'For anyone': "Hey there, I'm a software engineer who loves building products that matter and writing code that lasts.",
     'Recruiters': "I'm a software engineer with 3 years of experience across distributed systems and ML infrastructure. Currently pursuing my MS in CS at CU Boulder and actively looking for summer 2026 internships.",
     'Founders': "I love the 0 to 1 journey. I've been a founding engineer before, owning infrastructure, shipping fast, and building AI-powered MVPs from scratch. I thrive in fast-paced, high-ownership environments.",
-    'Engineers': "I geek out over distributed systems and ML pipelines. I've optimized LLMs, wrangled Kafka, and built backends that can serve millions. Always happy to jam on architecture or debug that tricky race condition.",
+    'Engineers': "I like big systems, small latencies, and code that doesn't wake anyone up at night. I've worked on backend services at scale, dealt with enough edge cases and defintely trust metrics more than vibes.",
     'Hiring Managers': "I care about ownership and impact. I've led small teams, built systems end-to-end, and always aim to leave the codebase better than I found it. I'll collaborate, learn, and help make something we're proud of."
 };
 
