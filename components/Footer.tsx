@@ -30,7 +30,7 @@ export default function Footer() {
                     <p className="text-xs sm:text-sm mb-3 sm:mb-4" style={{ color: mutedColor }}>
                         Typeset in <span style={{ color: headerColor }}>Outfit</span> by <span style={{ color: headerColor }}>Google Fonts</span>
                     </p>
-                    <p className="text-xs sm:text-sm" style={{ color: mutedColor }}>© 2025</p>
+                    <p className="text-xs sm:text-sm" style={{ color: mutedColor }}>© 2026</p>
                 </div>
             </div>
 
