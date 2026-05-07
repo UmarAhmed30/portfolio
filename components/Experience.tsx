@@ -5,10 +5,19 @@ import AdaptiveLogo from './AdaptiveLogo';
 
 const experiences = [
     {
+        logo: "/images/logos/f5.png",
+        title: "F5, Inc.",
+        role: "Software Development Engineer Intern",
+        year: "Now",
+        location: "Boulder",
+        description: "Incoming @ NGINX SaaS Team",
+        link: "https://www.f5.com/"
+    },
+    {
         logo: "/images/logos/cub.png",
         title: "University of Colorado Boulder",
         role: "Course Grader",
-        year: "Now",
+        year: "2025–2026",
         location: "Boulder",
         description: "CU_BOULDER_COURSES",
         link: "https://www.colorado.edu/"
