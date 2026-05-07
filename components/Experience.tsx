@@ -7,7 +7,7 @@ const experiences = [
     {
         logo: "/images/logos/f5.png",
         title: "F5, Inc.",
-        role: "Software Development Engineer Intern",
+        role: "SDE Intern",
         year: "Now",
         location: "Boulder",
         description: "Incoming @ NGINX SaaS Team",
