@@ -66,7 +66,7 @@ export default function IntroLoader() {
                         color: headerColor,
                     }}
                 >
-                    — CS Grad Student @ CU Boulder
+                    — CS Grad Student @ CU Boulder | SWE @ F5/NGINX
                 </p>
             </div>
         </div>

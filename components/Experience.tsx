@@ -10,7 +10,7 @@ const experiences = [
         role: "SDE Intern",
         year: "Now",
         location: "Boulder",
-        description: "Incoming @ NGINX SaaS Team",
+        description: "NGINX SaaS (AWS)",
         link: "https://www.f5.com/"
     },
     {
