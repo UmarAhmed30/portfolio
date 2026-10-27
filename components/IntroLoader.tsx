@@ -66,7 +66,7 @@ export default function IntroLoader() {
                         color: headerColor,
                     }}
                 >
-                    — MSCS @ CU Boulder
+                    - mscs @ cu boulder
                 </p>
             </div>
         </div>

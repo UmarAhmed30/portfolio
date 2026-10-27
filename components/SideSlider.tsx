@@ -11,13 +11,13 @@ export default function SideSlider() {
     const [isHoveringLogo, setIsHoveringLogo] = useState(false);
 
     const navItems = [
-        { id: 'intro', label: 'Intro' },
-        { id: 'values', label: 'Values' },
-        { id: 'work', label: 'Background' },
-        { id: 'education', label: 'Education' },
-        { id: 'experience', label: 'Experience' },
-        { id: 'projects', label: 'Projects' },
-        { id: 'contact', label: 'Contact' },
+        { id: 'intro', label: 'intro' },
+        { id: 'values', label: 'values' },
+        { id: 'work', label: 'background' },
+        { id: 'education', label: 'education' },
+        { id: 'experience', label: 'experience' },
+        { id: 'projects', label: 'projecs' },
+        { id: 'contact', label: 'contact' },
     ];
 
     useEffect(() => {
