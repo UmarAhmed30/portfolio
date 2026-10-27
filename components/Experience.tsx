@@ -5,6 +5,15 @@ import AdaptiveLogo from './AdaptiveLogo';
 
 const experiences = [
     {
+        logo: "/images/logos/cub.png",
+        title: "University of Colorado Boulder",
+        role: "Course Grader + Course Manager",
+        year: "2025–Now",
+        location: "Boulder",
+        description: "CU_BOULDER_COURSES",
+        link: "https://www.colorado.edu/"
+    },
+    {
         logo: "/images/logos/f5.png",
         title: "F5, Inc.",
         role: "SDE Intern",
@@ -12,15 +21,6 @@ const experiences = [
         location: "Boulder",
         description: "NGINX SaaS (AWS)",
         link: "https://www.f5.com/"
-    },
-    {
-        logo: "/images/logos/cub.png",
-        title: "University of Colorado Boulder",
-        role: "Course Grader",
-        year: "2025–2026",
-        location: "Boulder",
-        description: "CU_BOULDER_COURSES",
-        link: "https://www.colorado.edu/"
     },
     {
         logo: "/images/logos/cub.png",
@@ -131,6 +131,63 @@ export default function Experience() {
                                     <div className="flex flex-col gap-3 mt-2">
                                         <div className="leading-relaxed">
                                             <a 
+                                                href="https://experts.colorado.edu/display/coursename_CSCI-3002"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                CSCI 3002: Fundamentals of HCI
+                                            </a>
+                                            <span style={{ color: mutedColor }}>  •  Mirela Alistar [Fall&apos;26]</span>
+                                        </div>
+                                        <div className="leading-relaxed">
+                                            <a 
+                                                href="https://math.colorado.edu/~kearnes/Teaching/Courses/F26/logic.html"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                MATH 4000: Foundations of Mathematics
+                                            </a>
+                                            <span style={{ color: mutedColor }}>  •  Keith Kearnes [Fall&apos;26]</span>
+                                        </div>
+                                        <div className="leading-relaxed">
+                                            <a 
+                                                href="https://math.colorado.edu/~kearnes/Teaching/Courses/F26/discrete.html"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="transition-opacity duration-200 hover:opacity-80"
+                                                style={{ 
+                                                    color: headerColor,
+                                                    textDecoration: 'underline',
+                                                    textDecorationStyle: 'dotted',
+                                                    textUnderlineOffset: '2px',
+                                                    textDecorationThickness: '1px',
+                                                    textDecorationColor: mutedColor,
+                                                }}
+                                            >
+                                                MATH 2001: Introduction to Discrete Mathematics
+                                            </a>
+                                            <span style={{ color: mutedColor }}>  •  Keith Kearnes [Fall&apos;26]</span>
+                                        </div>
+                                        <div className="leading-relaxed">
+                                            <a 
                                                 href="https://gowthamk.github.io/"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
@@ -165,7 +222,7 @@ export default function Experience() {
                                             >
                                                 MATH 2130: Introduction to Linear Algebra
                                             </a>
-                                            <span style={{ color: mutedColor }}>  •  Zheng Xiao [Fall&apos;25 && Spring&apos;26]</span>
+                                            <span style={{ color: mutedColor }}>  •  Zheng Xiao [Fall&apos;25 - Spring&apos;26 - Fall&apos;26]</span>
                                         </div>
                                         <div className="leading-relaxed">
                                             <a 
